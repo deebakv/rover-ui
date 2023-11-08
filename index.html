@@ -76,7 +76,14 @@
                     </div>
                     <div class="box box2">
                         <!-- <i class="uil uil-comments"></i> -->
-                        <span class="text">AI</span>
+                        <span class="text">TIMER</span>
+                        <div class="timer-container">
+                            <p id="timer">0:0:0</p>
+                                <button onclick="startTimer()">Start</button>
+                                <button onclick="stopTimer()">Stop</button>
+                                <button onclick="resetTimer()">Reset</button>
+                        </div>
+    
                         
                     </div>
                     <div class="box box3">
@@ -87,12 +94,23 @@
                     <div class="box box4">
                         <!-- <i class="uil uil-share"></i> -->
                         <span class="text">Autonomous</span>
-                        
                     </div>
                     <div class="box box5">
                         <!-- <i class="uil uil-share"></i> -->
                         <span class="text">Control</span>
-                        
+                        <div class="control">
+                            <div class="coordinates">
+                                <p style="padding-bottom: 10px;font-weight: bold;">COORDINATES</p>
+                                <p id="x">NOT RECIEVED</p>
+                                <p id="y">NOT RECIEVED</p>
+                            </div>
+                            <div class="compass">
+                                <p style="padding-bottom: 10px;font-weight: bold;">DIRECTION</p>
+                                <div class="compass-needle"></div>
+                                
+                            </div>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
@@ -103,6 +121,6 @@
     </section>
 
     <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
-    <script src="style.css"></script>
+    <script src="script.js"></script>
 </body>
 </html>
